@@ -81,10 +81,10 @@ def test_distinguisher_acc(nr=6, net='./', diff=(0x8400, 0x0400, 0, 0), group_si
 
 nr = 3
 net = './saved_model/{}_distinguisher.h5'.format(nr)
-net_2_mc = './saved_model/{}_2_mc_distinguisher.h5'.format(nr)
-net_4_mc = './saved_model/{}_4_mc_distinguisher.h5'.format(nr)
-net_8_mc = './saved_model/{}_8_mc_distinguisher.h5'.format(nr)
-net_16_mc = './saved_model/{}_16_mc_distinguisher.h5'.format(nr)
+net_2_mc = './saved_model/mc/{}_2_mc_distinguisher.h5'.format(nr)
+net_4_mc = './saved_model/mc/{}_4_mc_distinguisher.h5'.format(nr)
+net_8_mc = './saved_model/mc/{}_8_mc_distinguisher.h5'.format(nr)
+net_16_mc = './saved_model/mc/{}_16_mc_distinguisher.h5'.format(nr)
 
 fn_x = select_false_negative_data(nr=nr, net=net, diff=(0x8400, 0x0400, 0, 0))
 print('cur rounds is ', nr)

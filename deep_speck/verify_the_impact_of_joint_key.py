@@ -40,7 +40,7 @@ def make_test_dataset(n=10**7, nr=6, diff=(0x40, 0), group_size=2):
     return X, Y
 
 
-def test_the_joint_key_distingisher(n=10**7, net='./n', nr=6, diff=(0x40, 0), group_size=2):
+def test_the_joint_key_distingisher(n=10**7, net='./', nr=6, diff=(0x40, 0), group_size=2):
     nd = load_model(net)
     X, Y = make_test_dataset(n=n, nr=nr, diff=diff, group_size=group_size)
     loss, acc = nd.evaluate(X, Y, batch_size=10000, verbose=0)
