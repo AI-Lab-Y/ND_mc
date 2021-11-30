@@ -1,4 +1,4 @@
-import deep_speck.speck as sp
+import speck as sp
 import numpy as np
 import matplotlib.pyplot as plt
 from os import urandom
